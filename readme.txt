@@ -26,7 +26,7 @@ The specified payment methods can then be displayed in the frontend via a widget
 
 = Payment method x is missing, what gives? =
 
-I've added some popular payment methods to begin with, if you want to see more let me know on <a href="http://twitter.com/jameskoster">twitter</a> or better yet, contribute on Github.
+I've added some popular payment methods to begin with, if you want to see more let me know on <a href="http://twitter.com/jameskoster">twitter</a> or better yet, <a href="https://github.com/jameskoster/woocommerce-accepted-payment-methods">contribute on Github</a>.
 
 == Screenshots ==
 
