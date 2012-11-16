@@ -1,0 +1,74 @@
+ul.accepted-payment-methods {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  list-style: none;
+}
+ul.accepted-payment-methods:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+ul.accepted-payment-methods li {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+  display: inline;
+  margin-right: .5em;
+}
+ul.accepted-payment-methods li span {
+  display: inline-block;
+  padding: 4px;
+  background: #fff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  width: 50px;
+  height: 16px;
+  text-align: left;
+  text-indent: -999em;
+  background-position: 4px 4px;
+  background-repeat: no-repeat;
+}
+ul.accepted-payment-methods li.visa span {
+  background-image: url(../images/visa.png);
+}
+ul.accepted-payment-methods li.paypal span {
+  width: 61px;
+  background-image: url(../images/paypal.png);
+}
+ul.accepted-payment-methods li.mastercard span {
+  width: 26px;
+  background-image: url(../images/mastercard.png);
+}
+ul.accepted-payment-methods li.google span {
+  width: 77px;
+  background-image: url(../images/google.png);
+}
+ul.accepted-payment-methods li.american-express span {
+  width: 18px;
+  background-image: url(../images/amex.png);
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1) {
+  ul.accepted-payment-methods li.visa span {
+    background-image: url(../images/visa@x2.png);
+    background-size: 50px 16px;
+  }
+  ul.accepted-payment-methods li.paypal span {
+    background-image: url(../images/paypal@x2.png);
+    background-size: 61px 16px;
+  }
+  ul.accepted-payment-methods li.mastercard span {
+    background-image: url(../images/mastercard@x2.png);
+    background-size: 26px 16px;
+  }
+  ul.accepted-payment-methods li.google span {
+    background-image: url(../images/google@x2.png);
+    background-size: 77px 16px;
+  }
+  ul.accepted-payment-methods li.american-express span {
+    background-image: url(../images/amex@x2.png);
+    background-size: 18px 16px;
+  }
+}
