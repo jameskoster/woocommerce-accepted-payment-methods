@@ -81,10 +81,10 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				// Default options
 				add_option( 'wc_apm_label', '' );
 				add_option( 'wc_apm_american_express', 'no' );
-				add_option( 'wc_apm_american_google', 'no' );
-				add_option( 'wc_apm_american_mastercard', 'no' );
-				add_option( 'wc_apm_american_paypal', 'no' );
-				add_option( 'wc_apm_american_visa', 'no' );
+				add_option( 'wc_apm_google', 'no' );
+				add_option( 'wc_apm_mastercard', 'no' );
+				add_option( 'wc_apm_paypal', 'no' );
+				add_option( 'wc_apm_visa', 'no' );
 				
 				// Admin
 				add_action( 'woocommerce_settings_image_options_after', array( &$this, 'admin_settings' ), 20);
