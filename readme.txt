@@ -11,7 +11,7 @@ Extends WooCommerce giving you the option to display accepted payment methods vi
 
 == Description ==
 
-WooCommerce Accepted Payment Methods extensions the WooCommerce settings allowing you to specify which payment methods your store accepts.
+WooCommerce Accepted Payment Methods extends the WooCommerce settings allowing you to specify which payment methods your store accepts.
 
 The specified payment methods can then be displayed in the frontend via a widget, a shortcode or by adding a template tag directly to your theme.
 
