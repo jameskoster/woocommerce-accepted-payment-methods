@@ -1,6 +1,6 @@
 === WooCommerce Accepted Payment Methods ===
 Contributors: jameskoster
-Tags: woocommerce, credit cart, logo, payment
+Tags: woocommerce, credit card, logo, payment
 Requires at least: 3.3
 Tested up to: 3.4.2
 Stable tag: 0.1
