@@ -35,5 +35,8 @@ I've added some popular payment methods to begin with, if you want to see more l
 
 == Changelog ==
 
+= 0.2 - 16/01/2013 =
+* Widget now uses title rather than 'label' option. Remove and re-add the widget to set the title when upgrading
+
 = 0.1 =
 Initial release.
