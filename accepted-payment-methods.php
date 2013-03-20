@@ -2,7 +2,7 @@
 /*
 Plugin Name: WooCommerce Accepted Payment Methods
 Plugin URI: http://jameskoster.co.uk/tag/accepted-payment-methods/
-Version: 0.2
+Version: 0.2.2
 Description: Allows you display which payment methods your online store accepts.
 Author: jameskoster
 Tested up to: 3.5
@@ -41,31 +41,31 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 					),
 					array(
 						'name' 		=> __( 'American Express', 'woocommerce-accepted-payment-methods' ),
-						'desc_tip' 	=> __( 'Display the American Express logo', 'woocommerce-accepted-payment-methods' ),
+						'desc' 		=> __( 'Display the American Express logo', 'woocommerce-accepted-payment-methods' ),
 						'id' 		=> 'wc_apm_american_express',
 						'type' 		=> 'checkbox'
 					),
 					array(
 						'name' 		=> __( 'Google', 'woocommerce-accepted-payment-methods' ),
-						'desc_tip' 	=> __( 'Display the Google logo', 'woocommerce-accepted-payment-methods' ),
+						'desc' 		=> __( 'Display the Google logo', 'woocommerce-accepted-payment-methods' ),
 						'id' 		=> 'wc_apm_google',
 						'type' 		=> 'checkbox'
 					),
 					array(
 						'name' 		=> __( 'MasterCard', 'woocommerce-accepted-payment-methods' ),
-						'desc_tip' 	=> __( 'Display the MasterCard logo', 'woocommerce-accepted-payment-methods' ),
+						'desc' 		=> __( 'Display the MasterCard logo', 'woocommerce-accepted-payment-methods' ),
 						'id' 		=> 'wc_apm_mastercard',
 						'type' 		=> 'checkbox'
 					),
 					array(
 						'name' 		=> __( 'PayPal', 'woocommerce-accepted-payment-methods' ),
-						'desc_tip' 	=> __( 'Display the PayPal logo', 'woocommerce-accepted-payment-methods' ),
+						'desc' 		=> __( 'Display the PayPal logo', 'woocommerce-accepted-payment-methods' ),
 						'id' 		=> 'wc_apm_paypal',
 						'type' 		=> 'checkbox'
 					),
 					array(
 						'name' 		=> __( 'Visa', 'woocommerce-accepted-payment-methods' ),
-						'desc_tip' 	=> __( 'Display the Visa logo', 'woocommerce-accepted-payment-methods' ),
+						'desc' 		=> __( 'Display the Visa logo', 'woocommerce-accepted-payment-methods' ),
 						'id' 		=> 'wc_apm_visa',
 						'type' 		=> 'checkbox'
 					),
@@ -83,7 +83,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				// Admin
 				add_action( 'woocommerce_settings_image_options_after', array( &$this, 'admin_settings' ), 20);
 				add_action( 'woocommerce_update_options_catalog', array( &$this, 'save_admin_settings' ) );
-				add_action( 'get_header', array( &$this, 'setup_styles' ) );
+				add_action( 'wp_enqueue_scripts', array( &$this, 'setup_styles' ) );
 
 
 			}

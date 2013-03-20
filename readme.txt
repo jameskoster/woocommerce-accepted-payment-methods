@@ -3,7 +3,7 @@ Contributors: jameskoster
 Tags: woocommerce, credit card, logo, payment
 Requires at least: 3.3
 Tested up to: 3.4.2
-Stable tag: 0.1
+Stable tag: 0.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,9 +11,13 @@ Extends WooCommerce giving you the option to display accepted payment methods vi
 
 == Description ==
 
+Sometimes you need to you want to inform your customers which payment methods are accepted on your WooCommerce store before they reach the checkout.
+
 WooCommerce Accepted Payment Methods extends the WooCommerce settings allowing you to specify which payment methods your store accepts.
 
-The specified payment methods can then be displayed in the frontend via a widget, a shortcode or by adding a template tag directly to your theme.
+The specified payment methods can then be displayed on the frontend via a widget, a shortcode or by adding a template tag directly to your theme.
+
+Please feel free to contribute on <a href="https://github.com/jameskoster/woocommerce-accepted-payment-methods">github</a>
 
 == Installation ==
 
@@ -34,6 +38,12 @@ I've added some popular payment methods to begin with, if you want to see more l
 2. The widget
 
 == Changelog ==
+
+= 0.2.2 - xx/xx/2013 =
+* UI tweak to be inline with 2.0s slightly updated settings API
+
+= 0.2.1 - 07/02/2013 =
+* styles correctly hooked into wp_enqueue_scripts();
 
 = 0.2 - 16/01/2013 =
 * Widget now uses title rather than 'label' option. Remove and re-add the widget to set the title when upgrading
