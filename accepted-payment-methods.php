@@ -20,7 +20,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 	/**
 	 * Localisation
 	 **/
-	load_plugin_textdomain('wc_apm', false, dirname( plugin_basename( __FILE__ ) ) . '/');
+	load_plugin_textdomain('wc_apm', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/');
 
 	/**
 	 * Accepted Payment Methods class
