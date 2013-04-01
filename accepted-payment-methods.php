@@ -7,10 +7,17 @@ Description: Allows you display which payment methods your online store accepts.
 Author: jameskoster
 Tested up to: 3.5
 Author URI: http://jameskoster.co.uk
+Text Domain: woocommerce-accepted-payment-methods
+Domain Path: /languages/
 
 	License: GNU General Public License v3.0
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
+
+/**
+ * Localisation
+ */
+load_plugin_textdomain( 'woocommerce-accepted-payment-methods', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
 /**
  * Check if WooCommerce is active
@@ -18,14 +25,9 @@ Author URI: http://jameskoster.co.uk
 if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 
 	/**
-	 * Localisation
-	 **/
-	load_plugin_textdomain('wc_apm', false, dirname( plugin_basename( __FILE__ ) ) . '/');
-
-	/**
 	 * Accepted Payment Methods class
 	 **/
-	if ( ! class_exists( 'wc_apm' ) ) {
+	if ( ! class_exists( 'WC_apm' ) ) {
 
 		class WC_apm {
 
@@ -36,7 +38,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 					array(
 						'name' => __( 'Accepted Payment Methods', 'woocommerce-accepted-payment-methods' ),
 						'type' => 'title',
-						'desc' => 'To display the selected payment methods you can use the built in widget, the <code>[woocommerce_accepted_payment_methods]</code> shortcode or the <code>&lt;?php wc_accepted_payment_methods(); ?&gt;</code> template tag.',
+						'desc' => sprintf( __( 'To display the selected payment methods you can use the built in widget, the %s shortcode or the %s template tag.', 'woocommerce-accepted-payment-methods' ), '<code>[woocommerce_accepted_payment_methods]</code>', '<code>&lt;?php wc_accepted_payment_methods(); ?&gt;</code>' ),
 						'id' => 'wc_apm_options'
 					),
 					array(
@@ -177,7 +179,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			}
 			?>
 			<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'woocommerce-accepted-payment-methods' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 			</p>
 			<?php

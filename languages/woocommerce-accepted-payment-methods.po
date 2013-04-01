@@ -1,0 +1,86 @@
+# This file is distributed under the same license as the WooCommerce Accepted Payment Methods package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2013-03-27 21:10:15+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: WooCommerce Accepted Payment Methods\n"
+
+#: accepted-payment-methods.php:39 accepted-payment-methods.php:178
+msgid "Accepted Payment Methods"
+msgstr ""
+
+#: accepted-payment-methods.php:45
+msgid "American Express"
+msgstr ""
+
+#: accepted-payment-methods.php:46
+msgid "Display the American Express logo"
+msgstr ""
+
+#: accepted-payment-methods.php:51
+msgid "Google"
+msgstr ""
+
+#: accepted-payment-methods.php:52
+msgid "Display the Google logo"
+msgstr ""
+
+#: accepted-payment-methods.php:57
+msgid "MasterCard"
+msgstr ""
+
+#: accepted-payment-methods.php:58
+msgid "Display the MasterCard logo"
+msgstr ""
+
+#: accepted-payment-methods.php:63
+msgid "PayPal"
+msgstr ""
+
+#: accepted-payment-methods.php:64
+msgid "Display the PayPal logo"
+msgstr ""
+
+#: accepted-payment-methods.php:69
+msgid "Visa"
+msgstr ""
+
+#: accepted-payment-methods.php:70
+msgid "Display the Visa logo"
+msgstr ""
+
+#: accepted-payment-methods.php:182
+msgid "Title:"
+msgstr ""
+
+#: accepted-payment-methods.php:0
+msgid "WooCommerce Accepted Payment Methods"
+msgstr ""
+
+#: accepted-payment-methods.php:0
+msgid "http://jameskoster.co.uk/tag/accepted-payment-methods/"
+msgstr ""
+
+#: accepted-payment-methods.php:0
+msgid "Allows you display which payment methods your online store accepts."
+msgstr ""
+
+#: accepted-payment-methods.php:0
+msgid "jameskoster"
+msgstr ""
+
+#: accepted-payment-methods.php:0
+msgid "http://jameskoster.co.uk"
+msgstr ""
+
+#: accepted-payment-methods.php:0
+msgid "0.2.2"
+msgstr ""
+
+#: accepted-payment-methods.php:41
+msgid "To display the selected payment methods you can use the built in widget, the %s shortcode or the %s template tag."
+msgstr ""
