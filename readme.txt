@@ -39,8 +39,14 @@ I've added some popular payment methods to begin with, if you want to see more l
 
 == Changelog ==
 
-= 0.2.2 - xx/xx/2013 =
+= 0.2.2 - 01/04/2013 =
 * UI tweak to be inline with 2.0s slightly updated settings API
+* Improved i18n (Kudos deckerweb)
+* Added missing Gettext syntax (Kudos deckerweb)
+* Changed loading call for textdomain (with correct textdomain) (Kudos deckerweb)
+* Unified textdomain (Kudos deckerweb)
+* Added default .po file for translators (Kudos deckerweb)
+* Added full German translations (Kudos deckerweb)
 
 = 0.2.1 - 07/02/2013 =
 * styles correctly hooked into wp_enqueue_scripts();
