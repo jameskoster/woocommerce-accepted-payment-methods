@@ -2,10 +2,10 @@
 /*
 Plugin Name: WooCommerce Accepted Payment Methods
 Plugin URI: http://jameskoster.co.uk/tag/accepted-payment-methods/
-Version: 0.2.3
+Version: 0.3
 Description: Allows you display which payment methods your online store accepts.
 Author: jameskoster
-Tested up to: 3.5
+Tested up to: 3.6
 Author URI: http://jameskoster.co.uk
 Text Domain: woocommerce-accepted-payment-methods
 Domain Path: /languages/
@@ -71,6 +71,12 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 						'id' 		=> 'wc_apm_visa',
 						'type' 		=> 'checkbox'
 					),
+					array(
+						'name' 		=> __( 'Discover', 'woocommerce-accepted-payment-methods' ),
+						'desc' 		=> __( 'Display the Discover logo', 'woocommerce-accepted-payment-methods' ),
+						'id' 		=> 'wc_apm_discover',
+						'type' 		=> 'checkbox'
+					),
 					array( 'type' => 'sectionend', 'id' => 'wc_apm_options' ),
 				);
 
@@ -81,11 +87,12 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				add_option( 'wc_apm_mastercard', 'no' );
 				add_option( 'wc_apm_paypal', 'no' );
 				add_option( 'wc_apm_visa', 'no' );
+				add_option( 'wc_apm_discover', 'no' );
 
 				// Admin
-				add_action( 'woocommerce_settings_image_options_after', array( &$this, 'admin_settings' ), 20);
-				add_action( 'woocommerce_update_options_catalog', array( &$this, 'save_admin_settings' ) );
-				add_action( 'wp_enqueue_scripts', array( &$this, 'setup_styles' ) );
+				add_action( 'woocommerce_settings_image_options_after', array( $this, 'admin_settings' ), 20);
+				add_action( 'woocommerce_update_options_catalog', array( $this, 'save_admin_settings' ) );
+				add_action( 'wp_enqueue_scripts', array( $this, 'setup_styles' ) );
 
 
 			}
@@ -122,6 +129,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			$mastercard = get_option( 'wc_apm_mastercard' );
 			$paypal 	= get_option( 'wc_apm_paypal' );
 			$visa 		= get_option( 'wc_apm_visa' );
+			$discover 	= get_option( 'wc_apm_discover' );
 
 			// Display
 			echo '<ul class="accepted-payment-methods">';
@@ -130,6 +138,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				if ( $mastercard == "yes" ) { echo '<li class="mastercard"><span>MasterCard</span></li>'; }
 				if ( $paypal == "yes" ) { echo '<li class="paypal"><span>PayPal</span></li>'; }
 				if ( $visa == "yes" ) { echo '<li class="visa"><span>Visa</span></li>'; }
+				if ( $discover == "yes" ) { echo '<li class="discover"><span>Discover</span></li>'; }
 			echo '</ul>';
 		}
 	}
@@ -181,6 +190,9 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			<p>
 			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'woocommerce-accepted-payment-methods' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+			</p>
+			<p>
+			<?php _e( 'Configure which payment methods your store accepts in the', 'woocommerce-accepted-payment-methods' ); ?> <a href="<?php echo admin_url( 'admin.php?page=woocommerce_settings&tab=catalog' ); ?>"><?php _e( 'WooCommerce settings', 'woocommerce-accepted-payment-methods' ); ?></a>.
 			</p>
 			<?php
 		}

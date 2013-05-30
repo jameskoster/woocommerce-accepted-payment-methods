@@ -1,4 +1,21 @@
-@import url(mixins.less);
+// Mixins
+
+.border_radius(@radius:10px) {
+    -webkit-border-radius:@radius;
+    -moz-border-radius:@radius;
+    border-radius:@radius;
+}
+
+.clearfix() {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+
+// Style
 
 ul.accepted-payment-methods {
 	.clearfix;
@@ -44,6 +61,10 @@ ul.accepted-payment-methods {
 			width:18px;
 			background-image: url(../images/amex.png);
 		}
+		&.discover span {
+			width:96px;
+			background-image: url(../images/discover.png);
+		}
 	}
 }
 
@@ -51,28 +72,32 @@ ul.accepted-payment-methods {
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1) { 
-  
+only screen and (     -o-min-device-pixel-ratio: 2/1) {
+
 	ul.accepted-payment-methods {
 		li.visa span {
-			background-image: url(../images/visa@x2.png);
+			background-image: url(../images/visa@2x.png);
 			background-size: 50px 16px;
 		}
 		li.paypal span {
-			background-image: url(../images/paypal@x2.png);
+			background-image: url(../images/paypal@2x.png);
 			background-size: 61px 16px;
 		}
 		li.mastercard span {
-			background-image: url(../images/mastercard@x2.png);
+			background-image: url(../images/mastercard@2x.png);
 			background-size: 26px 16px;
 		}
 		li.google span {
-			background-image: url(../images/google@x2.png);
+			background-image: url(../images/google@2x.png);
 			background-size: 77px 16px;
 		}
 		li.american-express span {
-			background-image: url(../images/amex@x2.png);
+			background-image: url(../images/amex@2x.png);
 			background-size: 18px 16px;
+		}
+		li.discover span {
+			background-image: url(../images/discover@2x.png);
+			background-size: 96px 16px;
 		}
 	}
 

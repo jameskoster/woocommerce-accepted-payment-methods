@@ -1,9 +1,9 @@
 === WooCommerce Accepted Payment Methods ===
 Contributors: jameskoster
 Tags: woocommerce, credit card, logo, payment
-Requires at least: 3.3
-Tested up to: 3.4.2
-Stable tag: 0.2.3
+Requires at least: 3.5
+Tested up to: 3.6
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,8 +39,11 @@ I've added some popular payment methods to begin with, if you want to see more l
 
 == Changelog ==
 
-= 0.2.3 - xx/xx/2013 =
-* Renamed widget to match WooCommerce core naming convention
+= 0.3 - 30/05/2013 =
+* Added Discover
+* Renamed widget to match WooCommerce core naming convention & added link to configure options
+* Stripped object pass by reference
+* Added en_GB po/mo
 
 = 0.2.2 - 01/04/2013 =
 * UI tweak to be inline with 2.0s slightly updated settings API
