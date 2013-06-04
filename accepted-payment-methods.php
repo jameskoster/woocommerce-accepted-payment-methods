@@ -77,6 +77,18 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 						'id' 		=> 'wc_apm_discover',
 						'type' 		=> 'checkbox'
 					),
+					array(
+						'name' 		=> __( 'Bitcoin', 'woocommerce-accepted-payment-methods' ),
+						'desc' 		=> __( 'Display the bitcoin logo', 'woocommerce-accepted-payment-methods' ),
+						'id' 		=> 'wc_apm_bitcoin',
+						'type' 		=> 'checkbox'
+					),
+					array(
+						'name' 		=> __( 'BTC', 'woocommerce-accepted-payment-methods' ),
+						'desc' 		=> __( 'Display the BTC coin logo', 'woocommerce-accepted-payment-methods' ),
+						'id' 		=> 'wc_apm_btc',
+						'type' 		=> 'checkbox'
+					),
 					array( 'type' => 'sectionend', 'id' => 'wc_apm_options' ),
 				);
 
@@ -88,6 +100,8 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				add_option( 'wc_apm_paypal', 'no' );
 				add_option( 'wc_apm_visa', 'no' );
 				add_option( 'wc_apm_discover', 'no' );
+				add_option( 'wc_apm_bitcoin', 'no' );
+				add_option( 'wc_apm_btc', 'no' );
 
 				// Admin
 				add_action( 'woocommerce_settings_image_options_after', array( $this, 'admin_settings' ), 20);
@@ -130,6 +144,8 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			$paypal 	= get_option( 'wc_apm_paypal' );
 			$visa 		= get_option( 'wc_apm_visa' );
 			$discover 	= get_option( 'wc_apm_discover' );
+			$bitcoin 	= get_option( 'wc_apm_bitcoin' );
+			$btc 		= get_option( 'wc_apm_btc' );
 
 			// Display
 			echo '<ul class="accepted-payment-methods">';
@@ -139,6 +155,8 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				if ( $paypal == "yes" ) { echo '<li class="paypal"><span>PayPal</span></li>'; }
 				if ( $visa == "yes" ) { echo '<li class="visa"><span>Visa</span></li>'; }
 				if ( $discover == "yes" ) { echo '<li class="discover"><span>Discover</span></li>'; }
+				if ( $bitcoin == "yes" ) { echo '<li class="bitcoin"><span>Bitcoin</span></li>'; }
+				if ( $btc == "yes" ) { echo '<li class="btc"><span>BTC</span></li>'; }
 			echo '</ul>';
 		}
 	}
