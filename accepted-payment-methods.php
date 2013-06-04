@@ -79,13 +79,13 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 					),
 					array(
 						'name' 		=> __( 'Bitcoin', 'woocommerce-accepted-payment-methods' ),
-						'desc' 		=> __( 'Display the bitcoin logo', 'woocommerce-accepted-payment-methods' ),
+						'desc' 		=> __( 'Display the Bitcoin logo', 'woocommerce-accepted-payment-methods' ),
 						'id' 		=> 'wc_apm_bitcoin',
 						'type' 		=> 'checkbox'
 					),
 					array(
 						'name' 		=> __( 'BTC', 'woocommerce-accepted-payment-methods' ),
-						'desc' 		=> __( 'Display the BTC coin logo', 'woocommerce-accepted-payment-methods' ),
+						'desc' 		=> __( 'Display the BTC coin', 'woocommerce-accepted-payment-methods' ),
 						'id' 		=> 'wc_apm_btc',
 						'type' 		=> 'checkbox'
 					),
