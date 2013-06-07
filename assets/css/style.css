@@ -42,6 +42,10 @@ ul.accepted-payment-methods li.mastercard span {
   width: 26px;
   background-image: url(../images/mastercard.png);
 }
+ul.accepted-payment-methods li.maestro span {
+  width: 26px;
+  background-image: url(../images/maestro.png);
+}
 ul.accepted-payment-methods li.google span {
   width: 77px;
   background-image: url(../images/google.png);
@@ -73,6 +77,10 @@ ul.accepted-payment-methods li.btc span {
   }
   ul.accepted-payment-methods li.mastercard span {
     background-image: url(../images/mastercard@2x.png);
+    background-size: 26px 16px;
+  }
+  ul.accepted-payment-methods li.maestro span {
+    background-image: url(../images/maestro@2x.png);
     background-size: 26px 16px;
   }
   ul.accepted-payment-methods li.google span {

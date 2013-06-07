@@ -48,9 +48,33 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 						'type' 		=> 'checkbox'
 					),
 					array(
+						'name' 		=> __( 'Bitcoin', 'woocommerce-accepted-payment-methods' ),
+						'desc' 		=> __( 'Display the Bitcoin logo', 'woocommerce-accepted-payment-methods' ),
+						'id' 		=> 'wc_apm_bitcoin',
+						'type' 		=> 'checkbox'
+					),
+					array(
+						'name' 		=> __( 'BTC', 'woocommerce-accepted-payment-methods' ),
+						'desc' 		=> __( 'Display the BTC coin', 'woocommerce-accepted-payment-methods' ),
+						'id' 		=> 'wc_apm_btc',
+						'type' 		=> 'checkbox'
+					),
+					array(
+						'name' 		=> __( 'Discover', 'woocommerce-accepted-payment-methods' ),
+						'desc' 		=> __( 'Display the Discover logo', 'woocommerce-accepted-payment-methods' ),
+						'id' 		=> 'wc_apm_discover',
+						'type' 		=> 'checkbox'
+					),
+					array(
 						'name' 		=> __( 'Google', 'woocommerce-accepted-payment-methods' ),
 						'desc' 		=> __( 'Display the Google logo', 'woocommerce-accepted-payment-methods' ),
 						'id' 		=> 'wc_apm_google',
+						'type' 		=> 'checkbox'
+					),
+					array(
+						'name' 		=> __( 'Maestro', 'woocommerce-accepted-payment-methods' ),
+						'desc' 		=> __( 'Display the Maestro logo', 'woocommerce-accepted-payment-methods' ),
+						'id' 		=> 'wc_apm_maestro',
 						'type' 		=> 'checkbox'
 					),
 					array(
@@ -71,24 +95,6 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 						'id' 		=> 'wc_apm_visa',
 						'type' 		=> 'checkbox'
 					),
-					array(
-						'name' 		=> __( 'Discover', 'woocommerce-accepted-payment-methods' ),
-						'desc' 		=> __( 'Display the Discover logo', 'woocommerce-accepted-payment-methods' ),
-						'id' 		=> 'wc_apm_discover',
-						'type' 		=> 'checkbox'
-					),
-					array(
-						'name' 		=> __( 'Bitcoin', 'woocommerce-accepted-payment-methods' ),
-						'desc' 		=> __( 'Display the Bitcoin logo', 'woocommerce-accepted-payment-methods' ),
-						'id' 		=> 'wc_apm_bitcoin',
-						'type' 		=> 'checkbox'
-					),
-					array(
-						'name' 		=> __( 'BTC', 'woocommerce-accepted-payment-methods' ),
-						'desc' 		=> __( 'Display the BTC coin', 'woocommerce-accepted-payment-methods' ),
-						'id' 		=> 'wc_apm_btc',
-						'type' 		=> 'checkbox'
-					),
 					array( 'type' => 'sectionend', 'id' => 'wc_apm_options' ),
 				);
 
@@ -102,6 +108,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				add_option( 'wc_apm_discover', 			'no' );
 				add_option( 'wc_apm_bitcoin', 			'no' );
 				add_option( 'wc_apm_btc', 				'no' );
+				add_option( 'wc_apm_maestro', 			'no' );
 
 				// Admin
 				add_action( 'woocommerce_settings_image_options_after', array( $this, 'admin_settings' ), 20);
@@ -146,17 +153,19 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			$discover 	= get_option( 'wc_apm_discover' );
 			$bitcoin 	= get_option( 'wc_apm_bitcoin' );
 			$btc 		= get_option( 'wc_apm_btc' );
+			$maestro 	= get_option( 'wc_apm_maestro' );
 
 			// Display
 			echo '<ul class="accepted-payment-methods">';
 				if ( $amex == "yes" ) { echo '<li class="american-express"><span>American Express</span></li>'; }
+				if ( $bitcoin == "yes" ) { echo '<li class="bitcoin"><span>Bitcoin</span></li>'; }
+				if ( $btc == "yes" ) { echo '<li class="btc"><span>BTC</span></li>'; }
+				if ( $discover == "yes" ) { echo '<li class="discover"><span>Discover</span></li>'; }
 				if ( $google == "yes" ) { echo '<li class="google"><span>Google</span></li>'; }
+				if ( $maestro == "yes" ) { echo '<li class="maestro"><span>Maestro</span></li>'; }
 				if ( $mastercard == "yes" ) { echo '<li class="mastercard"><span>MasterCard</span></li>'; }
 				if ( $paypal == "yes" ) { echo '<li class="paypal"><span>PayPal</span></li>'; }
 				if ( $visa == "yes" ) { echo '<li class="visa"><span>Visa</span></li>'; }
-				if ( $discover == "yes" ) { echo '<li class="discover"><span>Discover</span></li>'; }
-				if ( $bitcoin == "yes" ) { echo '<li class="bitcoin"><span>Bitcoin</span></li>'; }
-				if ( $btc == "yes" ) { echo '<li class="btc"><span>BTC</span></li>'; }
 			echo '</ul>';
 		}
 	}

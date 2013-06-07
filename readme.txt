@@ -41,6 +41,7 @@ I've added some popular payment methods to begin with, if you want to see more l
 
 = 0.4 - 07/06/2013 =
 * Added Bitcoin & BTC (Kudos piit79)
+* Added Maestro
 
 = 0.3 - 30/05/2013 =
 * Added Discover
