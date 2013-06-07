@@ -2,7 +2,7 @@
 /*
 Plugin Name: WooCommerce Accepted Payment Methods
 Plugin URI: http://jameskoster.co.uk/tag/accepted-payment-methods/
-Version: 0.3
+Version: 0.4
 Description: Allows you display which payment methods your online store accepts.
 Author: jameskoster
 Tested up to: 3.6
@@ -93,15 +93,15 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				);
 
 				// Default options
-				add_option( 'wc_apm_label', '' );
-				add_option( 'wc_apm_american_express', 'no' );
-				add_option( 'wc_apm_google', 'no' );
-				add_option( 'wc_apm_mastercard', 'no' );
-				add_option( 'wc_apm_paypal', 'no' );
-				add_option( 'wc_apm_visa', 'no' );
-				add_option( 'wc_apm_discover', 'no' );
-				add_option( 'wc_apm_bitcoin', 'no' );
-				add_option( 'wc_apm_btc', 'no' );
+				add_option( 'wc_apm_label', 			'' );
+				add_option( 'wc_apm_american_express', 	'no' );
+				add_option( 'wc_apm_google', 			'no' );
+				add_option( 'wc_apm_mastercard', 		'no' );
+				add_option( 'wc_apm_paypal', 			'no' );
+				add_option( 'wc_apm_visa', 				'no' );
+				add_option( 'wc_apm_discover', 			'no' );
+				add_option( 'wc_apm_bitcoin', 			'no' );
+				add_option( 'wc_apm_btc', 				'no' );
 
 				// Admin
 				add_action( 'woocommerce_settings_image_options_after', array( $this, 'admin_settings' ), 20);

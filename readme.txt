@@ -3,7 +3,7 @@ Contributors: jameskoster
 Tags: woocommerce, credit card, logo, payment
 Requires at least: 3.5
 Tested up to: 3.6
-Stable tag: 0.3
+Stable tag: 0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -38,6 +38,9 @@ I've added some popular payment methods to begin with, if you want to see more l
 2. The widget
 
 == Changelog ==
+
+= 0.4 - 07/06/2013 =
+* Added Bitcoin & BTC (Kudos piit79)
 
 = 0.3 - 30/05/2013 =
 * Added Discover

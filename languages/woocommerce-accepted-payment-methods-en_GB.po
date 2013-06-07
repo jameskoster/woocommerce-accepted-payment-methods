@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WooCommerce Accepted Payment Methods v0.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2013-05-30 15:24:04+0000\n"
+"PO-Revision-Date: 2013-06-07 10:15:31+0000\n"
 "Last-Translator: admin <james@jameskoster.co.uk>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -56,7 +56,7 @@ msgid "0.3"
 msgstr ""
 
 #: accepted-payment-methods.php:39
-#: accepted-payment-methods.php:187
+#: accepted-payment-methods.php:205
 #@ woocommerce-accepted-payment-methods
 msgid "Accepted Payment Methods"
 msgstr ""
@@ -127,18 +127,38 @@ msgstr ""
 msgid "Display the Discover logo"
 msgstr ""
 
-#: accepted-payment-methods.php:191
+#: accepted-payment-methods.php:209
 #@ woocommerce-accepted-payment-methods
 msgid "Title:"
 msgstr ""
 
-#: accepted-payment-methods.php:195
+#: accepted-payment-methods.php:213
 #@ woocommerce-accepted-payment-methods
 msgid "Configure which payment methods your store accepts in the"
 msgstr ""
 
-#: accepted-payment-methods.php:195
+#: accepted-payment-methods.php:213
 #@ woocommerce-accepted-payment-methods
 msgid "WooCommerce settings"
+msgstr ""
+
+#: accepted-payment-methods.php:81
+#@ woocommerce-accepted-payment-methods
+msgid "Bitcoin"
+msgstr ""
+
+#: accepted-payment-methods.php:82
+#@ woocommerce-accepted-payment-methods
+msgid "Display the Bitcoin logo"
+msgstr ""
+
+#: accepted-payment-methods.php:87
+#@ woocommerce-accepted-payment-methods
+msgid "BTC"
+msgstr ""
+
+#: accepted-payment-methods.php:88
+#@ woocommerce-accepted-payment-methods
+msgid "Display the BTC coin"
 msgstr ""
 
