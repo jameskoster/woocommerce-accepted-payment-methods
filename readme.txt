@@ -24,7 +24,8 @@ Please feel free to contribute on <a href="https://github.com/jameskoster/woocom
 1. Upload `woocommerce-accepted-payment-methods` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Specify which payment methods you accept on the Catalog tab of the WooCommerce settings screen
-3. Done!
+4. Display your accepted methods via: Widget, Shortcode `[woocommerce_accepted_payment_methods]` or template tag `wc_accepted_payment_methods();`.
+5. Done!
 
 == Frequently Asked Questions ==
 
