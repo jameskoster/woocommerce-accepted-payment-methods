@@ -1,0 +1,95 @@
+# This file is distributed under the same license as the WooCommerce Accepted Payment Methods package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-01-03 10:57+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.6.3\n"
+"Project-Id-Version: WooCommerce Accepted Payment Methods\n"
+"POT-Creation-Date: \n"
+"Last-Translator: Ramon van Belzen <woocommerce@ramoonus.nl>\n"
+"Language-Team: Ramon van Belzen <github@ramoonus.nl>\n"
+"Language: nl_NL\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: accepted-payment-methods.php:39 accepted-payment-methods.php:178
+msgid "Accepted Payment Methods"
+msgstr "Ondersteunde Betalings Methoden"
+
+#: accepted-payment-methods.php:45
+msgid "American Express"
+msgstr "American Express"
+
+#: accepted-payment-methods.php:46
+msgid "Display the American Express logo"
+msgstr ""
+
+#: accepted-payment-methods.php:51
+msgid "Google"
+msgstr "Google"
+
+#: accepted-payment-methods.php:52
+msgid "Display the Google logo"
+msgstr ""
+
+#: accepted-payment-methods.php:57
+msgid "MasterCard"
+msgstr "MasterCard"
+
+#: accepted-payment-methods.php:58
+msgid "Display the MasterCard logo"
+msgstr ""
+
+#: accepted-payment-methods.php:63
+msgid "PayPal"
+msgstr "PayPal"
+
+#: accepted-payment-methods.php:64
+msgid "Display the PayPal logo"
+msgstr ""
+
+#: accepted-payment-methods.php:69
+msgid "Visa"
+msgstr "Visa"
+
+#: accepted-payment-methods.php:70
+msgid "Display the Visa logo"
+msgstr ""
+
+#: accepted-payment-methods.php:182
+msgid "Title:"
+msgstr "Titel:"
+
+#: accepted-payment-methods.php:0
+msgid "WooCommerce Accepted Payment Methods"
+msgstr "WooCommerce Ondersteunde Betalings Methoden"
+
+#: accepted-payment-methods.php:0
+msgid "http://jameskoster.co.uk/tag/accepted-payment-methods/"
+msgstr "http://jameskoster.co.uk/tag/accepted-payment-methods/"
+
+#: accepted-payment-methods.php:0
+msgid "Allows you display which payment methods your online store accepts."
+msgstr ""
+
+#: accepted-payment-methods.php:0
+msgid "jameskoster"
+msgstr "jameskoster"
+
+#: accepted-payment-methods.php:0
+msgid "http://jameskoster.co.uk"
+msgstr "http://jameskoster.co.uk"
+
+#: accepted-payment-methods.php:0
+msgid "0.2.2"
+msgstr "0.2.2"
+
+#: accepted-payment-methods.php:41
+msgid ""
+"To display the selected payment methods you can use the built in widget, the "
+"%s shortcode or the %s template tag."
+msgstr ""
