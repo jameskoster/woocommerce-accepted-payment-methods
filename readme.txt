@@ -3,7 +3,7 @@ Contributors: jameskoster
 Tags: woocommerce, credit card, logo, payment
 Requires at least: 3.5
 Tested up to: 3.8.1
-Stable tag: 0.6.0
+Stable tag: 0.5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,10 +40,8 @@ I've added some popular payment methods to begin with, if you want to see more l
 
 == Changelog ==
 
-= 0.6.0 - 04/03/2014 =
+= 0.5.0 - 04/03/2014 =
 * WooCommerce 2.1 compatibility (now required WooCommerce 2.1).
-
-= 0.5.0 - 03/01/2014 =
 * NL translation. Kudos @ramoonus
 
 = 0.4 - 07/06/2013 =
