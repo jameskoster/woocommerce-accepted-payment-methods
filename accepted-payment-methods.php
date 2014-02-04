@@ -2,10 +2,10 @@
 /*
 Plugin Name: WooCommerce Accepted Payment Methods
 Plugin URI: http://jameskoster.co.uk/tag/accepted-payment-methods/
-Version: 0.4
+Version: 0.5.0
 Description: Allows you display which payment methods your online store accepts.
 Author: jameskoster
-Tested up to: 3.6
+Tested up to: 3.8.1
 Author URI: http://jameskoster.co.uk
 Text Domain: woocommerce-accepted-payment-methods
 Domain Path: /languages/
@@ -111,8 +111,8 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				add_option( 'wc_apm_maestro', 			'no' );
 
 				// Admin
-				add_action( 'woocommerce_settings_image_options_after', array( $this, 'admin_settings' ), 20);
-				add_action( 'woocommerce_update_options_catalog', array( $this, 'save_admin_settings' ) );
+				add_action( 'woocommerce_settings_checkout', array( $this, 'admin_settings' ), 20 );
+				add_action( 'woocommerce_update_options_checkout', array( $this, 'save_admin_settings' ) );
 				add_action( 'wp_enqueue_scripts', array( $this, 'setup_styles' ) );
 
 

@@ -2,8 +2,8 @@
 Contributors: jameskoster
 Tags: woocommerce, credit card, logo, payment
 Requires at least: 3.5
-Tested up to: 3.6
-Stable tag: 0.4
+Tested up to: 3.8.1
+Stable tag: 0.5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,7 +23,7 @@ Please feel free to contribute on <a href="https://github.com/jameskoster/woocom
 
 1. Upload `woocommerce-accepted-payment-methods` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Specify which payment methods you accept on the Catalog tab of the WooCommerce settings screen
+3. Specify which payment methods you accept on the Checkout tab of the WooCommerce settings screen
 4. Display your accepted methods via: Widget, Shortcode `[woocommerce_accepted_payment_methods]` or template tag `wc_accepted_payment_methods();`.
 5. Done!
 
@@ -39,6 +39,10 @@ I've added some popular payment methods to begin with, if you want to see more l
 2. The widget
 
 == Changelog ==
+
+= 0.5.0 - 04/03/2014 =
+* WooCommerce 2.1 compatibility (now required WooCommerce 2.1).
+* NL translation. Kudos @ramoonus
 
 = 0.4 - 07/06/2013 =
 * Added Bitcoin & BTC (Kudos piit79)
