@@ -88,12 +88,21 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 						'desc' 		=> __( 'Display the PayPal logo', 'woocommerce-accepted-payment-methods' ),
 						'id' 		=> 'wc_apm_paypal',
 						'type' 		=> 'checkbox'
+					
 					),
 					array(
-						'name' 		=> __( 'Visa', 'woocommerce-accepted-payment-methods' ),
-						'desc' 		=> __( 'Display the Visa logo', 'woocommerce-accepted-payment-methods' ),
-						'id' 		=> 'wc_apm_visa',
+						'name' 		=> __( 'Webmoney', 'woocommerce-accepted-payment-methods' ),
+						'desc' 		=> __( 'Display the Webmoney logo', 'woocommerce-accepted-payment-methods' ),
+						'id' 		=> 'wc_apm_webmoney',
 						'type' 		=> 'checkbox'
+						
+					),
+					array(
+						'name' 		=> __( 'Yandexmoney', 'woocommerce-accepted-payment-methods' ),
+						'desc' 		=> __( 'Display the YandexMoney logo', 'woocommerce-accepted-payment-methods' ),
+						'id' 		=> 'wc_apm_yandexmoney',
+						'type' 		=> 'checkbox'
+					
 					),
 					array( 'type' => 'sectionend', 'id' => 'wc_apm_options' ),
 				);
@@ -109,6 +118,8 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				add_option( 'wc_apm_bitcoin', 			'no' );
 				add_option( 'wc_apm_btc', 				'no' );
 				add_option( 'wc_apm_maestro', 			'no' );
+				add_option( 'wc_apm_webmoney', 			'no' );
+				add_option( 'wc_apm_yandexmoney', 			'no' );
 
 				// Admin
 				add_action( 'woocommerce_settings_checkout', array( $this, 'admin_settings' ), 20 );
@@ -154,6 +165,8 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			$bitcoin 	= get_option( 'wc_apm_bitcoin' );
 			$btc 		= get_option( 'wc_apm_btc' );
 			$maestro 	= get_option( 'wc_apm_maestro' );
+			$webmoney 	= get_option( 'wc_apm_webmoney' );
+			$yandexmoney 	= get_option( 'wc_apm_yandexmoney' );
 
 			// Display
 			echo '<ul class="accepted-payment-methods">';
@@ -166,6 +179,8 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				if ( $mastercard == "yes" ) { echo '<li class="mastercard"><span>MasterCard</span></li>'; }
 				if ( $paypal == "yes" ) { echo '<li class="paypal"><span>PayPal</span></li>'; }
 				if ( $visa == "yes" ) { echo '<li class="visa"><span>Visa</span></li>'; }
+				if ( $webmoney == "yes" ) { echo '<li class="webmoney"><span>Webmoney</span></li>'; }
+				if ( $yandexmoney == "yes" ) { echo '<li class="yandemoney"><span>Yandexmoney</span></li>'; }
 			echo '</ul>';
 		}
 	}
