@@ -228,7 +228,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 			</p>
 			<p>
-			<?php _e( 'Configure which payment methods your store accepts in the', 'woocommerce-accepted-payment-methods' ); ?> <a href="<?php echo admin_url( 'admin.php?page=woocommerce_settings&tab=catalog' ); ?>"><?php _e( 'WooCommerce settings', 'woocommerce-accepted-payment-methods' ); ?></a>.
+			<?php _e( 'Configure which payment methods your store accepts in the', 'woocommerce-accepted-payment-methods' ); ?> <a href="<?php echo admin_url( 'admin.php?page=wc-settings&tab=checkout' ); ?>"><?php _e( 'WooCommerce settings', 'woocommerce-accepted-payment-methods' ); ?></a>.
 			</p>
 			<?php
 		}
