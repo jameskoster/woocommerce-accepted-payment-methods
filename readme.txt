@@ -30,6 +30,7 @@ Please feel free to contribute on <a href="https://github.com/jameskoster/woocom
 == Frequently Asked Questions ==
 
 = Payment method x is missing, what gives? =
+Provide the name of payment provider along with two images of 64px*64px and 128px*128px.
 
 I've added some popular payment methods to begin with, if you want to see more let me know on <a href="http://twitter.com/jameskoster">twitter</a> or better yet, <a href="https://github.com/jameskoster/woocommerce-accepted-payment-methods">contribute on Github</a>.
 
