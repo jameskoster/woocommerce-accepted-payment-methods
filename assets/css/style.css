@@ -81,46 +81,46 @@ ul.accepted-payment-methods li.visa span {
   ul.accepted-payment-methods li.american-express span {
     background-image: url(../images/logos-sprite@2x.png);
     background-size: 64px 64px;
-    background position: -16px -16px;
+    background-position: -16px -16px;
   }
   ul.accepted-payment-methods li.bitcoin span {
     background-image: url(../images/logos-sprite@2x.png);
     background-size: 64px 64px;
-    background position: -16px -248px;
+    background-position: -16px -248px;
   }
     ul.accepted-payment-methods li.cash-on-delivery span {
     background-image: url(../images/logos-sprite@2x.png);
     background-size: 64px 64px;
-    background position: -16px -496px;
+    background-position: -16px -496px;
   }
   ul.accepted-payment-methods li.discover span {
     background-image: url(../images/logos-sprite@2x.png);
     background-size: 64px 64px;
-    background position: -16px -728px;
+    background-position: -16px -728px;
   }
   ul.accepted-payment-methods li.google span {
     background-image: url(../images/logos-sprite@2x.png);
     background-size: 64px 64px;
-    background position: -16px -960px;
+    background-position: -16px -960px;
   }
   ul.accepted-payment-methods li.maestro span {
     background-image: url(../images/logos-sprite@2x.png);
     background-size: 64px 64px;
-    background position: -16px -1192px;
+    background-position: -16px -1192px;
   }
   ul.accepted-payment-methods li.mastercard span {
     background-image: url(../images/logos-sprite@2x.png);
     background-size: 64px 64px;
-    background position: -16px -1424px;
+    background-position: -16px -1424px;
   }
   ul.accepted-payment-methods li.paypal span {
     background-image: url(../images/logos-sprite@2x.png);
     background-size: 64px 64px;
-    background position: -16px -1656px;
+    background-position: -16px -1656px;
   }
   ul.accepted-payment-methods li.visa span {
     background-image: url(../images/logos-sprite@2x.png);
     background-size: 64px 64px;
-    background position: -16px -1888px;
+    background-position: -16px -1888px;
   }
 }
