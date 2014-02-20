@@ -29,57 +29,63 @@ ul.accepted-payment-methods {
 		margin-left:0;
 		list-style: none;
 		display:inline;
-		margin-right:.5em;
+		margin-right:0;
 		span {
 			display: inline-block;
 			padding:4px;
-			background: #fff;
+			background: none;
 			.border_radius(3px);
-			width:50px;
-			height:16px;
+			width:64px;
+			height:64px;
 			text-align: left;
 			text-indent: -999em;
 			background-position:4px 4px;
 			background-repeat: no-repeat;
-		}
-		&.visa span {
-			background-image: url(../images/visa.png);
-		}
-		&.paypal span {
-			width:61px;
-			background-image: url(../images/paypal.png);
-		}
-		&.mastercard span {
-			width:26px;
-			background-image: url(../images/mastercard.png);
-		}
-		&.maestro span {
-			width:26px;
-			background-image: url(../images/maestro.png);
-		}
-		&.google span {
-			width:77px;
-			background-image: url(../images/google.png);
-		}
+			}
 		&.american-express span {
-			width:18px;
-			background-image: url(../images/amex.png);
-		}
-		&.discover span {
-			width:96px;
-			background-image: url(../images/discover.png);
+			width:64px;
+			background-image: url(../images/logos-sprite.png);
+			background-position: -6px -6px;
 		}
 		&.bitcoin span {
-			width:77px;
-			background-image: url(../images/bitcoin.png);
-		}
-		&.btc span {
-			width:16px;
-			background-image: url(../images/btc.png);
+			width:64px;
+			background-image: url(../images/logos-sprite.png);
+			background-position: -6px -90px;
 		}
 		&.cash-on-delivery span {
-			width:47px;
-			background-image: url(../images/cod.png);
+			width:64px;
+			background-image: url(../images/logos-sprite.png);
+			background-position: -6px -174px;
+		}
+		&.discover span {
+			width:64px;
+			background-image: url(../images/logos-sprite.png);
+			background-position: -6px -258px;
+		}
+		&.google span {
+			width:64px;
+			background-image: url(../images/logos-sprite.png);
+			background-position: -6px -342px;
+		}
+		&.maestro span {
+			width:64px;
+			background-image: url(../images/logos-sprite.png);
+			background-position: -6px -426px;
+		}
+		&.mastercard span {
+			width:64px;
+			background-image: url(../images/logos-sprite.png);
+			background-position: -6px -510px;
+		}
+		&.paypal span {
+			width:64px;
+			background-image: url(../images/logos-sprite.png);
+			background-position: -6px -594px;
+		}
+		&.visa span {
+			width:64px;
+			background-image: url(../images/logos-sprite.png);
+			background-position: -6px -678px;
 		}
 	}
 }
@@ -91,46 +97,50 @@ only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (     -o-min-device-pixel-ratio: 2/1) {
 
 	ul.accepted-payment-methods {
-		li.visa span {
-			background-image: url(../images/visa@2x.png);
-			background-size: 50px 16px;
-		}
-		li.paypal span {
-			background-image: url(../images/paypal@2x.png);
-			background-size: 61px 16px;
-		}
-		li.mastercard span {
-			background-image: url(../images/mastercard@2x.png);
-			background-size: 26px 16px;
-		}
-		li.maestro span {
-			background-image: url(../images/maestro@2x.png);
-			background-size: 26px 16px;
-		}
-		li.google span {
-			background-image: url(../images/google@2x.png);
-			background-size: 77px 16px;
-		}
 		li.american-express span {
-			background-image: url(../images/amex@2x.png);
-			background-size: 18px 16px;
-		}
-		li.discover span {
-			background-image: url(../images/discover@2x.png);
-			background-size: 96px 16px;
+			background-image: url(../images/logos-sprite@2x.png);
+			background-size: 64px 64px;
+      background-position: -16px -16px;
 		}
 		li.bitcoin span {
-			background-image: url(../images/bitcoin@2x.png);
-			background-size: 77px 16px;
-		}
-		li.btc span {
-			background-image: url(../images/btc@2x.png);
-			background-size: 16px 16px;
+			background-image: url(../images/logos-sprite@2x.png);
+			background-size: 64px 64px;
+      background-position: -16px -248px;
 		}
 		li.cash-on-delivery span {
-			background-image: url(../images/cod@2x.png);
-			background-size: 47px 16px;
+			background-image: url(../images/logos-sprite@2x.png);
+			background-size: 64px 64px;
+      background-position: -16px -496px;
+		}
+		li.discover span {
+			background-image: url(../images/logos-sprite@2x.png);
+			background-size: 64px 64px;
+      background-position: -16px -728px;
+		}
+		li.google span {
+			background-image: url(../images/logos-sprite@2x.png);
+			background-size: 64px 64px;
+      background-position: -16px -960px;
+		}
+		li.maestro span {
+			background-image: url(../images/logos-sprite@2x.png);
+			background-size: 64px 64px;
+      background-position: -16px -1192px;
+		}
+		li.mastercard span {
+			background-image: url(../images/logos-sprite@2x.png);
+			background-size: 64px 64px;
+      background-position: -16px -1424px;
+		}
+		li.paypal span {
+			background-image: url(../images/logos-sprite@2x.png);
+			background-size: 64px 64px;
+      background-position: -16px -1656px;
+		}
+		li.visa span {
+			background-image: url(../images/logos-sprite@2x.png);
+			background-size: 64px 64px;
+      background-position: -16px -1888px;
 		}
 	}
-
 }

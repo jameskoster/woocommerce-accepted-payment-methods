@@ -15,100 +15,112 @@ ul.accepted-payment-methods li {
   margin-left: 0;
   list-style: none;
   display: inline;
-  margin-right: .5em;
+  margin-right: 0;
 }
 ul.accepted-payment-methods li span {
   display: inline-block;
   padding: 4px;
-  background: #fff;
+  background: none;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  width: 50px;
-  height: 16px;
+  width: 64px;
+  height: 64px;
   text-align: left;
   text-indent: -999em;
   background-position: 4px 4px;
   background-repeat: no-repeat;
 }
-ul.accepted-payment-methods li.visa span {
-  background-image: url(../images/visa.png);
-}
-ul.accepted-payment-methods li.paypal span {
-  width: 61px;
-  background-image: url(../images/paypal.png);
-}
-ul.accepted-payment-methods li.mastercard span {
-  width: 26px;
-  background-image: url(../images/mastercard.png);
-}
-ul.accepted-payment-methods li.maestro span {
-  width: 26px;
-  background-image: url(../images/maestro.png);
-}
-ul.accepted-payment-methods li.google span {
-  width: 77px;
-  background-image: url(../images/google.png);
-}
 ul.accepted-payment-methods li.american-express span {
-  width: 18px;
-  background-image: url(../images/amex.png);
-}
-ul.accepted-payment-methods li.discover span {
-  width: 96px;
-  background-image: url(../images/discover.png);
+  width: 64px;
+  background-image: url(../images/logos-sprite.png);
+  background-position: -6px -6px;
 }
 ul.accepted-payment-methods li.bitcoin span {
-  width: 77px;
-  background-image: url(../images/bitcoin.png);
-}
-ul.accepted-payment-methods li.btc span {
-  width: 16px;
-  background-image: url(../images/btc.png);
+  width: 64px;
+  background-image: url(../images/logos-sprite.png);
+  background-position: -6px -90px;
 }
 ul.accepted-payment-methods li.cash-on-delivery span {
-  width: 47px;
-  background-image: url(../images/cod.png);
+  width: 64px;
+  background-image: url(../images/logos-sprite.png);
+   background-position: -6px -174px;
+}
+ul.accepted-payment-methods li.discover span {
+  width: 64px;
+  background-image: url(../images/logos-sprite.png);
+   background-position: -6px -258px;
+}
+ul.accepted-payment-methods li.google span {
+  width: 64px;
+  background-image: url(../images/logos-sprite.png);
+    background-position: -6px -342px;
+}
+
+ul.accepted-payment-methods li.maestro span {
+  width: 64px;
+  background-image: url(../images/logos-sprite.png);
+  background-position: -6px -426px;
+}
+ul.accepted-payment-methods li.mastercard span {
+  width: 64px;
+  background-image: url(../images/logos-sprite.png);
+  background-position: -6px -510px;
+}
+ul.accepted-payment-methods li.paypal span {
+	width: 64px;
+	background-image: url(../images/logos-sprite.png);
+	background-position: -6px -594px;
+}
+ul.accepted-payment-methods li.visa span {
+	width: 64px;
+	background-image: url(../images/logos-sprite.png);
+	background-position: -6px -678px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1) {
-  ul.accepted-payment-methods li.visa span {
-    background-image: url(../images/visa@2x.png);
-    background-size: 50px 16px;
-  }
-  ul.accepted-payment-methods li.paypal span {
-    background-image: url(../images/paypal@2x.png);
-    background-size: 61px 16px;
-  }
-  ul.accepted-payment-methods li.mastercard span {
-    background-image: url(../images/mastercard@2x.png);
-    background-size: 26px 16px;
-  }
-  ul.accepted-payment-methods li.maestro span {
-    background-image: url(../images/maestro@2x.png);
-    background-size: 26px 16px;
-  }
-  ul.accepted-payment-methods li.google span {
-    background-image: url(../images/google@2x.png);
-    background-size: 77px 16px;
-  }
   ul.accepted-payment-methods li.american-express span {
-    background-image: url(../images/amex@2x.png);
-    background-size: 18px 16px;
-  }
-  ul.accepted-payment-methods li.discover span {
-    background-image: url(../images/discover@2x.png);
-    background-size: 96px 16px;
+    background-image: url(../images/logos-sprite@2x.png);
+    background-size: 64px 64px;
+    background-position: -16px -16px;
   }
   ul.accepted-payment-methods li.bitcoin span {
-    background-image: url(../images/bitcoin@2x.png);
-    background-size: 77px 16px;
-  }
-  ul.accepted-payment-methods li.btc span {
-    background-image: url(../images/btc@2x.png);
-    background-size: 16px 16px;
+    background-image: url(../images/logos-sprite@2x.png);
+    background-size: 64px 64px;
+    background-position: -16px -248px;
   }
     ul.accepted-payment-methods li.cash-on-delivery span {
-    background-image: url(../images/cod@2x.png);
-    background-size: 47px 16px;
+    background-image: url(../images/logos-sprite@2x.png);
+    background-size: 64px 64px;
+    background-position: -16px -496px;
+  }
+  ul.accepted-payment-methods li.discover span {
+    background-image: url(../images/logos-sprite@2x.png);
+    background-size: 64px 64px;
+    background-position: -16px -728px;
+  }
+  ul.accepted-payment-methods li.google span {
+    background-image: url(../images/logos-sprite@2x.png);
+    background-size: 64px 64px;
+    background-position: -16px -960px;
+  }
+  ul.accepted-payment-methods li.maestro span {
+    background-image: url(../images/logos-sprite@2x.png);
+    background-size: 64px 64px;
+    background-position: -16px -1192px;
+  }
+  ul.accepted-payment-methods li.mastercard span {
+    background-image: url(../images/logos-sprite@2x.png);
+    background-size: 64px 64px;
+    background-position: -16px -1424px;
+  }
+  ul.accepted-payment-methods li.paypal span {
+    background-image: url(../images/logos-sprite@2x.png);
+    background-size: 64px 64px;
+    background-position: -16px -1656px;
+  }
+  ul.accepted-payment-methods li.visa span {
+    background-image: url(../images/logos-sprite@2x.png);
+    background-size: 64px 64px;
+    background-position: -16px -1888px;
   }
 }
