@@ -41,8 +41,9 @@ I've added some popular payment methods to begin with, if you want to see more l
 == Changelog ==
 
 = 0.6.0 - 04/18/2014 =
-* Added cash on delivery symbol (Kudos chirag-v)
-* Fixed broken link in widget
+* New - cash on delivery symbol (Kudos chirag-v)
+* New - Danish translation (props MamaTux)
+* Fix - broken link in widget
 
 = 0.5.0 - 04/02/2014 =
 * WooCommerce 2.1 compatibility (now required WooCommerce 2.1).
