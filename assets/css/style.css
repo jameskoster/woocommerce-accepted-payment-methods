@@ -62,10 +62,6 @@ ul.accepted-payment-methods li.bitcoin span {
   width: 77px;
   background-image: url(../images/bitcoin.png);
 }
-ul.accepted-payment-methods li.btc span {
-  width: 16px;
-  background-image: url(../images/btc.png);
-}
 ul.accepted-payment-methods li.cash-on-delivery span {
   width: 47px;
   background-image: url(../images/cod.png);
@@ -106,10 +102,6 @@ ul.accepted-payment-methods li.dankort span {
   ul.accepted-payment-methods li.bitcoin span {
     background-image: url(../images/bitcoin@2x.png);
     background-size: 77px 16px;
-  }
-  ul.accepted-payment-methods li.btc span {
-    background-image: url(../images/btc@2x.png);
-    background-size: 16px 16px;
   }
   ul.accepted-payment-methods li.cash-on-delivery span {
     background-image: url(../images/cod@2x.png);

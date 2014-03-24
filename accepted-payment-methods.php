@@ -54,12 +54,6 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 						'type' 		=> 'checkbox'
 					),
 					array(
-						'name' 		=> __( 'BTC', 'woocommerce-accepted-payment-methods' ),
-						'desc' 		=> __( 'Display the BTC coin', 'woocommerce-accepted-payment-methods' ),
-						'id' 		=> 'wc_apm_btc',
-						'type' 		=> 'checkbox'
-					),
-					array(
 						'name' 		=> __( 'Cash on Delivery', 'woocommerce-accepted-payment-methods' ),
 						'desc' 		=> __( 'Display Cash on Delivery symbol', 'woocommerce-accepted-payment-methods' ),
 						'id' 		=> 'wc_apm_cash_on_delivery',
@@ -119,7 +113,6 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				add_option( 'wc_apm_visa', 				'no' );
 				add_option( 'wc_apm_discover', 			'no' );
 				add_option( 'wc_apm_bitcoin', 			'no' );
-				add_option( 'wc_apm_btc', 				'no' );
 				add_option( 'wc_apm_maestro', 			'no' );
 				add_option( 'wc_apm_cash_on_delivery', 	'no' );
 				add_option( 'wc_apm_dankort', 	'no' );
@@ -166,7 +159,6 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			$visa 		= get_option( 'wc_apm_visa' );
 			$discover 	= get_option( 'wc_apm_discover' );
 			$bitcoin 	= get_option( 'wc_apm_bitcoin' );
-			$btc 		= get_option( 'wc_apm_btc' );
 			$maestro 	= get_option( 'wc_apm_maestro' );
 			$cod		= get_option( 'wc_apm_cash_on_delivery');
 			$dankort 	= get_option( 'wc_apm_dankort');
@@ -176,7 +168,6 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				if ( $dankort == "yes" ) { echo '<li class="dankort"><span>Dankort</span></li>'; }
 				if ( $amex == "yes" ) { echo '<li class="american-express"><span>American Express</span></li>'; }
 				if ( $bitcoin == "yes" ) { echo '<li class="bitcoin"><span>Bitcoin</span></li>'; }
-				if ( $btc == "yes" ) { echo '<li class="btc"><span>BTC</span></li>'; }
 				if ( $cod == "yes" ) { echo '<li class="cash-on-delivery"><span>Cash on Delivery</span></li>'; }
 				if ( $discover == "yes" ) { echo '<li class="discover"><span>Discover</span></li>'; }
 				if ( $google == "yes" ) { echo '<li class="google"><span>Google</span></li>'; }
