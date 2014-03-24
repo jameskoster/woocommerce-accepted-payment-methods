@@ -66,6 +66,12 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 						'type' 		=> 'checkbox'
 					),
 					array(
+						'name' 		=> __( 'Dankort', 'woocommerce-accepted-payment-methods' ),
+						'desc' 		=> __( 'Display the Dankort logo', 'woocommerce-accepted-payment-methods' ),
+						'id' 		=> 'wc_apm_dankort',
+						'type' 		=> 'checkbox'
+					),
+					array(
 						'name' 		=> __( 'Discover', 'woocommerce-accepted-payment-methods' ),
 						'desc' 		=> __( 'Display the Discover logo', 'woocommerce-accepted-payment-methods' ),
 						'id' 		=> 'wc_apm_discover',
@@ -116,6 +122,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 				add_option( 'wc_apm_btc', 				'no' );
 				add_option( 'wc_apm_maestro', 			'no' );
 				add_option( 'wc_apm_cash_on_delivery', 	'no' );
+				add_option( 'wc_apm_dankort', 	'no' );
 
 				// Admin
 				add_action( 'woocommerce_settings_checkout', array( $this, 'admin_settings' ), 20 );
@@ -162,9 +169,11 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 			$btc 		= get_option( 'wc_apm_btc' );
 			$maestro 	= get_option( 'wc_apm_maestro' );
 			$cod		= get_option( 'wc_apm_cash_on_delivery');
+			$dankort 	= get_option( 'wc_apm_dankort');
 
 			// Display
 			echo '<ul class="accepted-payment-methods">';
+				if ( $dankort == "yes" ) { echo '<li class="dankort"><span>Dankort</span></li>'; }
 				if ( $amex == "yes" ) { echo '<li class="american-express"><span>American Express</span></li>'; }
 				if ( $bitcoin == "yes" ) { echo '<li class="bitcoin"><span>Bitcoin</span></li>'; }
 				if ( $btc == "yes" ) { echo '<li class="btc"><span>BTC</span></li>'; }

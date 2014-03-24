@@ -1,0 +1,195 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Accepted Payment Methods v0.6.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-03-24 09:28:14+0000\n"
+"Last-Translator: gitte <gitte@customcouture.dk>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Danish\n"
+"X-Poedit-Country: DENMARK\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#. translators: plugin header field 'Name'
+#: accepted-payment-methods.php:0
+#@ woocommerce-accepted-payment-methods
+msgid "WooCommerce Accepted Payment Methods"
+msgstr ""
+
+#. translators: plugin header field 'PluginURI'
+#: accepted-payment-methods.php:0
+#@ woocommerce-accepted-payment-methods
+msgid "http://jameskoster.co.uk/tag/accepted-payment-methods/"
+msgstr ""
+
+#. translators: plugin header field 'Description'
+#: accepted-payment-methods.php:0
+#@ woocommerce-accepted-payment-methods
+msgid "Allows you display which payment methods your online store accepts."
+msgstr "Gør det muligt for dig at vælge hvilke betalingsmetoder din webshop tager bruger."
+
+#. translators: plugin header field 'Author'
+#: accepted-payment-methods.php:0
+#@ woocommerce-accepted-payment-methods
+msgid "jameskoster"
+msgstr ""
+
+#. translators: plugin header field 'AuthorURI'
+#: accepted-payment-methods.php:0
+#@ woocommerce-accepted-payment-methods
+msgid "http://jameskoster.co.uk"
+msgstr ""
+
+#: accepted-payment-methods.php:39
+#: accepted-payment-methods.php:232
+#@ woocommerce-accepted-payment-methods
+msgid "Accepted Payment Methods"
+msgstr ""
+
+#: accepted-payment-methods.php:41
+#, php-format
+#@ woocommerce-accepted-payment-methods
+msgid "To display the selected payment methods you can use the built in widget, the %s shortcode or the %s template tag."
+msgstr "For at vise de valgte betalingsmetoder, kan du bruge enten den indbyggede widget, %s shortcoden eller %s template tagget."
+
+#: accepted-payment-methods.php:45
+#@ woocommerce-accepted-payment-methods
+msgid "American Express"
+msgstr ""
+
+#: accepted-payment-methods.php:46
+#@ woocommerce-accepted-payment-methods
+msgid "Display the American Express logo"
+msgstr "Vis logoet for American Express"
+
+#: accepted-payment-methods.php:51
+#@ woocommerce-accepted-payment-methods
+msgid "Bitcoin"
+msgstr ""
+
+#: accepted-payment-methods.php:52
+#@ woocommerce-accepted-payment-methods
+msgid "Display the Bitcoin logo"
+msgstr "Vis logoet for Bitcoin"
+
+#: accepted-payment-methods.php:57
+#@ woocommerce-accepted-payment-methods
+msgid "BTC"
+msgstr ""
+
+#: accepted-payment-methods.php:58
+#@ woocommerce-accepted-payment-methods
+msgid "Display the BTC coin"
+msgstr "Vis logoet for BTC"
+
+#: accepted-payment-methods.php:75
+#@ woocommerce-accepted-payment-methods
+msgid "Discover"
+msgstr ""
+
+#: accepted-payment-methods.php:76
+#@ woocommerce-accepted-payment-methods
+msgid "Display the Discover logo"
+msgstr "Vis logoet for Discover"
+
+#: accepted-payment-methods.php:81
+#@ woocommerce-accepted-payment-methods
+msgid "Google"
+msgstr ""
+
+#: accepted-payment-methods.php:82
+#@ woocommerce-accepted-payment-methods
+msgid "Display the Google logo"
+msgstr "Vis logoet for Google"
+
+#: accepted-payment-methods.php:87
+#@ woocommerce-accepted-payment-methods
+msgid "Maestro"
+msgstr ""
+
+#: accepted-payment-methods.php:88
+#@ woocommerce-accepted-payment-methods
+msgid "Display the Maestro logo"
+msgstr "Vis logoet for Maestro"
+
+#: accepted-payment-methods.php:93
+#@ woocommerce-accepted-payment-methods
+msgid "MasterCard"
+msgstr ""
+
+#: accepted-payment-methods.php:94
+#@ woocommerce-accepted-payment-methods
+msgid "Display the MasterCard logo"
+msgstr "Vis logoet for Mastercard"
+
+#: accepted-payment-methods.php:99
+#@ woocommerce-accepted-payment-methods
+msgid "PayPal"
+msgstr ""
+
+#: accepted-payment-methods.php:100
+#@ woocommerce-accepted-payment-methods
+msgid "Display the PayPal logo"
+msgstr "Vis logoet for PayPal"
+
+#: accepted-payment-methods.php:105
+#@ woocommerce-accepted-payment-methods
+msgid "Visa"
+msgstr ""
+
+#: accepted-payment-methods.php:106
+#@ woocommerce-accepted-payment-methods
+msgid "Display the Visa logo"
+msgstr "Vis logoet for Visa"
+
+#: accepted-payment-methods.php:236
+#@ woocommerce-accepted-payment-methods
+msgid "Title:"
+msgstr "Titel:"
+
+#: accepted-payment-methods.php:240
+#@ woocommerce-accepted-payment-methods
+msgid "Configure which payment methods your store accepts in the"
+msgstr "Indstil hvilke betalingsmetoder din butik tager imod i"
+
+#: accepted-payment-methods.php:240
+#@ woocommerce-accepted-payment-methods
+msgid "WooCommerce settings"
+msgstr ""
+
+#. translators: plugin header field 'Version'
+#: accepted-payment-methods.php:0
+#@ woocommerce-accepted-payment-methods
+msgid "0.6.0"
+msgstr ""
+
+#: accepted-payment-methods.php:63
+#@ woocommerce-accepted-payment-methods
+msgid "Cash on Delivery"
+msgstr ""
+
+#: accepted-payment-methods.php:64
+#@ woocommerce-accepted-payment-methods
+msgid "Display Cash on Delivery symbol"
+msgstr "Vis kontant symbol"
+
+#: accepted-payment-methods.php:69
+#@ woocommerce-accepted-payment-methods
+msgid "Dankort"
+msgstr ""
+
+#: accepted-payment-methods.php:70
+#@ woocommerce-accepted-payment-methods
+msgid "Display the Dankort logo"
+msgstr "Vis logoet for Dankort"
+
