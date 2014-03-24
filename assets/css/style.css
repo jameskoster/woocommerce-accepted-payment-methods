@@ -70,6 +70,10 @@ ul.accepted-payment-methods li.cash-on-delivery span {
   width: 47px;
   background-image: url(../images/cod.png);
 }
+ul.accepted-payment-methods li.dankort span {
+  width: 29px;
+  background-image: url(../images/dankort.png);
+}
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1) {
   ul.accepted-payment-methods li.visa span {
     background-image: url(../images/visa@2x.png);
@@ -107,8 +111,12 @@ ul.accepted-payment-methods li.cash-on-delivery span {
     background-image: url(../images/btc@2x.png);
     background-size: 16px 16px;
   }
-    ul.accepted-payment-methods li.cash-on-delivery span {
+  ul.accepted-payment-methods li.cash-on-delivery span {
     background-image: url(../images/cod@2x.png);
     background-size: 47px 16px;
+  }
+  ul.accepted-payment-methods li.dankort span {
+    background-image: url(../images/dankort@2x.png);
+    background-size: 29px 16px;
   }
 }
