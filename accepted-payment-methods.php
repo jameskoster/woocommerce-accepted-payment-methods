@@ -2,10 +2,10 @@
 /*
 Plugin Name: WooCommerce Accepted Payment Methods
 Plugin URI: http://jameskoster.co.uk/tag/accepted-payment-methods/
-Version: 0.6.0
+Version: 0.7.0
 Description: Allows you display which payment methods your online store accepts.
 Author: jameskoster
-Tested up to: 3.8.1
+Tested up to: 4.0
 Author URI: http://jameskoster.co.uk
 Text Domain: woocommerce-accepted-payment-methods
 Domain Path: /languages/
