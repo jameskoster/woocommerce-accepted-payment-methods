@@ -185,9 +185,8 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 	// The widget
 	class Accepted_Payment_Methods extends WP_Widget {
 
-		function Accepted_Payment_Methods() {
-			// Instantiate the parent object
-			parent::__construct( false, 'WooCommerce Accepted Payment Methods' );
+		function __construct() {
+			parent::__construct(false, 'WooCommerce Accepted Payment Methods' );
 		}
 
 		function widget( $args, $instance ) {
